@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Patient Registration</h1>
+  <div class="form-container">
+    <h2>Patient Registration Form</h2>
+    <form id="registrationForm" action="process_form.php" method="POST">
+      <label for="patientName">Patient Name:</label>
+      <input type="text" id="patientName" name="patientName">
+      <div id="patientNameError" class="error"></div>
+  
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="bi">Bi-sexual</option>
+      </select>
+      <div id="genderError" class="error"></div>
+  
+      <label for="county">County:</label>
+      <select id="county" name="county">
+        <option value="">Select County</option>
+        <option value="Baringo">Baringo</option>
+<option value="Bomet">Bomet</option>
+<option value="Bungoma">Bungoma</option>
+<option value="Busia">Busia</option>
+<option value="Elgeyo Marakwet">Elgeyo Marakwet</option>
+<option value="Embu">Embu</option>
+<option value="Garissa">Garissa</option>
+<option value="Homa Bay">Homa Bay</option>
+<option value="Isiolo">Isiolo</option>
+<option value="Kajiado">Kajiado</option>
+<option value="Kakamega">Kakamega</option>
+<option value="Kericho">Kericho</option>
+<option value="Kiambu">Kiambu</option>
+<option value="Kilifi">Kilifi</option>
+<option value="Kirinyaga">Kirinyaga</option>
+<option value="Kisii">Kisii</option>
+<option value="Kisumu">Kisumu</option>
+<option value="Kitui">Kitui</option>
+<option value="Kwale">Kwale</option>
+<option value="Laikipia">Laikipia</option>
+<option value="Lamu">Lamu</option>
+<option value="Machakos">Machakos</option>
+<option value="Makueni">Makueni</option>
+<option value="Mandera">Mandera</option>
+<option value="Marsabit">Marsabit</option>
+<option value="Meru">Meru</option>
+<option value="Migori">Migori</option>
+<option value="Mombasa">Mombasa</option>
+<option value="Murang'a">Murang'a</option>
+<option value="Nairobi">Nairobi</option>
+<option value="Nakuru">Nakuru</option>
+<option value="Nandi">Nandi</option>
+<option value="Narok">Narok</option>
+<option value="Nyamira">Nyamira</option>
+<option value="Nyandarua">Nyandarua</option>
+<option value="Nyeri">Nyeri</option>
+<option value="Samburu">Samburu</option>
+<option value="Siaya">Siaya</option>
+<option value="Taita-Taveta">Taita-Taveta</option>
+<option value="Tana River">Tana River</option>
+<option value="Tharaka-Nithi">Tharaka-Nithi</option>
+<option value="Trans Nzoia">Trans Nzoia</option>
+<option value="Turkana">Turkana</option>
+<option value="Uasin Gishu">Uasin Gishu</option>
+<option value="Vihiga">Vihiga</option>
+<option value="Wajir">Wajir</option>
+<option value="West Pokot">West Pokot</option>
+      </select>
+      <div id="countyError" class="error"></div>
+  
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber">
+      <div id="phoneNumberError" class="error"></div>
+  
+      <label for="nextOfKin">Next of Kin:</label>
+      <input type="text" id="nextOfKin" name="nextOfKin">
+      <div id="nextOfKinError" class="error"></div>
+  
+      <label for="patientID">Patient ID:</label>
+      <select id="patientID" name="patientID">
+        <option value="">Select Patient ID</option>
+        <option value="001">001</option>
+  <option value="002">002</option>
+  <option value="003">003</option>
+  <option value="004">004</option>
+  <option value="005">005</option>
+  <option value="006">006</option>
+  <option value="007">007</option>
+  <option value="008">008</option>
+  <option value="009">009</option>
+  <option value="010">010</option>
+  <option value="011">011</option>
+  <option value="012">012</option>
+  <option value="013">013</option>
+  <option value="014">014</option>
+  <option value="015">015</option>
+      </select>
+      <div id="patientIDError" class="error"></div>
+  
+      <label for="medicalHistory">Medical History:</label>
+      <textarea id="medicalHistory" name="medicalHistory"></textarea>
+      <div id="medicalHistoryError" class="error"></div>
+  
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clear">
+    </form>
+  </div>
+</body>
+</html>

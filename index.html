@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicare Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="hospital-logo-green-blue_1043-66.jpg" alt="Hospital Logo" height="50">
+        <span>MediCare Hospital</span>
+      </header>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="registration.html">Registration</a>
+        <a href="records.html">Records</a>
+        <a href="#">About Us</a>
+        <a href="#">Contacts</a>
+      </nav>
+      <div class="container">
+        <nav class="sidebar">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Patients</a>
+            <a href="#">Doctors</a>
+            <a href="#">Appointments</a>
+            <a href="#">Reports</a>
+        </nav>
+      <main>
+        <img src="istockphoto-1341490004-612x612.jpg" alt="" height="250">
+        <h1>Welcome to the Health Information System</h1>
+        <p>This system provides comprehensive health information management for patients and medical staff.</p>
+      </main>
+      <footer>
+        <p>&copy; 2024 Medicare Hospital. All rights reserved. | Registration Number: P15/1899/2022</p>
+      </footer>
+      <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+          var isValid = true;
+      
+          var errorElements = document.querySelectorAll(".error");
+          errorElements.forEach(function(element) {
+            element.textContent = "";
+          });
+      
+          var patientName = document.getElementById("patientName").value.trim();
+          if (patientName === "") {
+            document.getElementById("patientNameError").textContent = "Please enter patient name";
+            isValid = false;
+          }
+    
+          var gender = document.getElementById("gender").value;
+          if (gender === "") {
+            document.getElementById("genderError").textContent = "Please select gender";
+            isValid = false;
+          }
+    
+          var county = document.getElementById("county").value;
+          if (county === "") {
+            document.getElementById("countyError").textContent = "Please select county";
+            isValid = false;
+          }
+      
+          var phoneNumber = document.getElementById("phoneNumber").value.trim();
+          if (phoneNumber === "") {
+            document.getElementById("phoneNumberError").textContent = "Please enter phone number";
+            isValid = false;
+          }
+      
+          var nextOfKin = document.getElementById("nextOfKin").value.trim();
+          if (nextOfKin === "") {
+            document.getElementById("nextOfKinError").textContent = "Please enter next of kin";
+            isValid = false;
+          }
+      
+          var patientID = document.getElementById("patientID").value;
+          if (patientID === "") {
+            document.getElementById("patientIDError").textContent = "Please select patient ID";
+            isValid = false;
+          }
+      
+          var medicalHistory = document.getElementById("medicalHistory").value.trim();
+          if (medicalHistory === "") {
+            document.getElementById("medicalHistoryError").textContent = "Please enter medical history";
+            isValid = false;
+          }
+      
+          if (!isValid) {
+            event.preventDefault(); 
+          }
+        });
+      </script>
+</body>
+</html>
